@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>رحمة الله عليه</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
@@ -23,43 +24,44 @@ body{
   background:radial-gradient(circle at top,#1a232b,#0f1418);
   color:var(--text);
   text-align:center;
-  line-height:2;
+  line-height:1.8;
   overflow-x:hidden;
 }
 
 /* HERO */
 header{
-  padding:80px 20px 40px;
+  padding:60px 10px 30px;
   animation:fadeIn 1.5s ease;
 }
 header h1{
-  font-size:32px;
+  font-size:28px;
   margin:0;
 }
 .sub{
   color:var(--muted);
-  margin-top:10px;
-  letter-spacing:1px;
+  margin-top:8px;
+  font-size:16px;
+  letter-spacing:0.5px;
 }
 
 /* IMAGES */
 .images{
   display:flex;
   justify-content:center;
-  gap:20px;
+  gap:15px;
   flex-wrap:wrap;
-  padding:30px 20px;
+  padding:20px 10px;
 }
 .images img{
-  width:300px;
-  max-width:90%;
+  width:48%;
+  max-width:300px;
   height:auto;
   object-fit:cover;
-  border-radius:18px;
+  border-radius:16px;
   filter:grayscale(100%);
-  box-shadow:0 15px 40px rgba(0,0,0,.6);
+  box-shadow:0 12px 30px rgba(0,0,0,.6);
   animation:float 6s ease-in-out infinite;
-  transition:.8s;
+  transition:.6s;
 }
 .images img:hover{
   filter:grayscale(0);
@@ -71,45 +73,48 @@ header h1{
 
 /* CARDS */
 section{
-  max-width:850px;
+  width:95%;
+  max-width:900px;
   margin:auto;
-  padding:50px 20px;
+  padding:40px 10px;
 }
 .card{
   background:linear-gradient(145deg,#1a232b,#0f1418);
-  border-radius:20px;
-  padding:35px 25px;
-  box-shadow:0 20px 60px rgba(0,0,0,.5);
+  border-radius:18px;
+  padding:25px 15px;
+  box-shadow:0 15px 50px rgba(0,0,0,.5);
   animation:fadeUp 1.5s ease;
   cursor:pointer;
   text-align:right;
-  line-height:1.9;
+  font-size:1rem;
+  line-height:1.6;
 }
 
 /* ATHKAR */
 .athkar-cards{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:18px;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:15px;
 }
 
 .zikr{
   background:linear-gradient(145deg,#1a232b,#0f1418);
-  border-radius:18px;
-  padding:22px 18px;
-  box-shadow:0 12px 30px rgba(0,0,0,.5);
-  transition:.6s;
+  border-radius:16px;
+  padding:18px 15px;
+  box-shadow:0 10px 25px rgba(0,0,0,.5);
+  transition:.4s;
   animation:fadeUp 1.4s ease;
   cursor:pointer;
   text-align:right;
-  line-height:1.7;
+  font-size:0.95rem;
+  line-height:1.5;
 }
 
-.zikr:hover{transform:translateY(-8px)}
+.zikr:hover{transform:translateY(-5px)}
 
 .zikr h3{
   color:var(--accent);
-  margin-bottom:10px;
+  margin-bottom:8px;
   font-weight:700;
 }
 
@@ -117,13 +122,13 @@ section{
 .modal{
   position:fixed;
   inset:0;
-  background:rgba(0,0,0,.7);
+  background:rgba(0,0,0,.8);
   display:flex;
   align-items:center;
   justify-content:center;
   opacity:0;
   pointer-events:none;
-  transition:.4s;
+  transition:.3s;
   z-index:999;
 }
 .modal.show{
@@ -133,59 +138,59 @@ section{
 .modal-box{
   background:linear-gradient(145deg,#1a232b,#0f1418);
   color:#fff;
-  max-width:600px;
   width:90%;
-  border-radius:20px;
-  padding:30px 25px;
+  max-width:500px;
+  border-radius:18px;
+  padding:25px 20px;
   text-align:center;
-  animation:fadeUp .6s ease;
+  animation:fadeUp .5s ease;
   word-break: break-word;
+  font-size:1rem;
 }
 .modal-box h3{
   color:var(--accent);
-  margin-bottom:15px;
+  margin-bottom:12px;
+  font-size:1.1rem;
 }
 .close{
   position:absolute;
-  top:15px;
-  right:20px;
-  font-size:26px;
+  top:12px;
+  right:15px;
+  font-size:24px;
   cursor:pointer;
 }
 
 /* FOOTER */
 footer{
-  padding:35px 10px;
+  padding:30px 10px;
   color:var(--muted);
   font-size:14px;
+  text-align:center;
 }
 
 /* ANIMATIONS */
 @keyframes fadeIn{
-  from{opacity:0;transform:translateY(20px)}
+  from{opacity:0;transform:translateY(15px)}
   to{opacity:1;transform:none}
 }
 @keyframes fadeUp{
-  from{opacity:0;transform:translateY(40px)}
+  from{opacity:0;transform:translateY(25px)}
   to{opacity:1;transform:none}
 }
 @keyframes float{
   0%,100%{transform:translateY(0)}
-  50%{transform:translateY(-15px)}
+  50%{transform:translateY(-12px)}
 }
 
-/* RESPONSIVE */
-@media(max-width:768px){
-  header h1{font-size:28px;}
-  .images img{width:45%; height:auto;}
-  section{padding:35px 15px;}
-  .card{padding:25px 15px;}
-}
+/* SMALL SCREENS */
 @media(max-width:480px){
-  header h1{font-size:24px;}
-  .images img{width:90%; margin-bottom:20px;}
-  .athkar-cards{grid-template-columns:1fr;}
-  .card{padding:20px 12px;}
+  header h1{font-size:22px;}
+  .sub{font-size:14px;}
+  .images img{width:95%; margin-bottom:15px;}
+  .card{font-size:0.95rem; padding:20px 12px;}
+  .zikr{font-size:0.9rem; padding:16px 12px;}
+  .modal-box{font-size:0.95rem; padding:20px 15px;}
+  .modal-box h3{font-size:1rem;}
 }
 
 </style>
@@ -199,8 +204,8 @@ footer{
 </header>
 
 <div class="images">
-  <img src="pic1.jpeg">
-  <img src="pic2.jpeg">
+  <img src="pic1.jpeg" alt="صورة 1">
+  <img src="pic2.jpeg" alt="صورة 2">
 </div>
 
 <section>
@@ -213,7 +218,7 @@ footer{
 </section>
 
 <section>
-  <h2 style="margin-bottom:30px;">أذكار ودعاء</h2>
+  <h2 style="margin-bottom:25px;">أذكار ودعاء</h2>
 
   <div class="athkar-cards">
 
