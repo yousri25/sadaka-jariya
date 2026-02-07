@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>رحمة الله عليه</title>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+  --bg:#0f1418;
+  --card:#161d23;
+  --text:#e8e8e8;
+  --muted:#9aa0a6;
+  --accent:#6fb1ff;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:'Amiri',serif;
+  background:radial-gradient(circle at top,#1a232b,#0f1418);
+  color:var(--text);
+  text-align:center;
+  line-height:2;
+  overflow-x:hidden;
+}
+
+/* HERO */
+header{
+  padding:90px 20px 60px;
+  animation:fadeIn 1.5s ease;
+}
+header h1{
+  font-size:38px;
+  margin:0;
+}
+.sub{
+  color:var(--muted);
+  margin-top:10px;
+  letter-spacing:1px;
+}
+
+/* IMAGES */
+.images{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  padding:40px 20px;
+}
+.images img{
+  width:300px;
+  height:400px;
+  object-fit:cover;
+  border-radius:18px;
+  filter:grayscale(100%);
+  box-shadow:0 15px 40px rgba(0,0,0,.6);
+  animation:float 6s ease-in-out infinite;
+  transition:.8s;
+}
+.images img:hover{
+  filter:grayscale(0);
+  transform:scale(1.05);
+}
+.images img:nth-child(2){
+  animation-delay:3s;
+}
+
+/* CARDS */
+section{
+  max-width:850px;
+  margin:auto;
+  padding:60px 20px;
+}
+.card{
+  background:linear-gradient(145deg,#1a232b,#0f1418);
+  border-radius:20px;
+  padding:40px;
+  box-shadow:0 20px 60px rgba(0,0,0,.5);
+  animation:fadeUp 1.5s ease;
+  cursor:pointer;
+}
+
+/* ATHKAR */
+.athkar-cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:22px;
+}
+
+.zikr{
+  background:linear-gradient(145deg,#1a232b,#0f1418);
+  border-radius:18px;
+  padding:25px 22px;
+  box-shadow:0 12px 30px rgba(0,0,0,.5);
+  transition:.6s;
+  animation:fadeUp 1.4s ease;
+  cursor:pointer;
+}
+
+.zikr:hover{transform:translateY(-8px)}
+
+.zikr h3{
+  color:var(--accent);
+  margin-bottom:10px;
+  font-weight:700;
+}
+
+/* MODAL */
+.modal{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.7);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  opacity:0;
+  pointer-events:none;
+  transition:.4s;
+  z-index:999;
+}
+.modal.show{
+  opacity:1;
+  pointer-events:auto;
+}
+.modal-box{
+  background:linear-gradient(145deg,#1a232b,#0f1418);
+  color:#fff;
+  max-width:600px;
+  width:90%;
+  border-radius:20px;
+  padding:35px;
+  text-align:center;
+  animation:fadeUp .6s ease;
+}
+.modal-box h3{
+  color:var(--accent);
+  margin-bottom:15px;
+}
+.close{
+  position:absolute;
+  top:20px;
+  right:25px;
+  font-size:26px;
+  cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+  padding:40px 10px;
+  color:var(--muted);
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn{
+  from{opacity:0;transform:translateY(20px)}
+  to{opacity:1;transform:none}
+}
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(40px)}
+  to{opacity:1;transform:none}
+}
+@keyframes float{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-18px)}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>إنا لله وإنا إليه راجعون</h1>
+  <div class="sub">رحمة الله عليه</div>
+</header>
+
+<div class="images">
+  <img src="pic1.jpeg">
+  <img src="pic2.jpeg">
+</div>
+
+<section>
+  <div class="card">
+    اللّهُمَّ اغْفِرْ لَهُ، وَارْحَمْهُ، وَعَافِهِ، وَاعْفُ عَنْهُ،  
+    وَأَكْرِمْ نُزُلَهُ، وَوَسِّعْ مُدْخَلَهُ،  
+    وَاغْسِلْهُ بِالْمَاءِ وَالثَّلْجِ وَالْبَرَدِ،  
+    وَنَقِّهِ مِنَ الْخَطَايَا كَمَا نَقَّيْتَ الثَّوْبَ الْأَبْيَضَ مِنَ الدَّنَسِ.
+  </div>
+</section>
+
+<section>
+  <h2 style="margin-bottom:30px;">أذكار ودعاء</h2>
+
+  <div class="athkar-cards">
+
+    <div class="zikr">
+      <h3>الاستغفار</h3>
+      <p>أَسْتَغْفِرُ اللَّهَ الْعَظِيمَ الَّذِي لَا إِلٰهَ إِلَّا هُوَ، الْحَيَّ الْقَيُّومَ، وَأَتُوبُ إِلَيْهِ.</p>
+    </div>
+
+    <div class="zikr">
+      <h3>التسبيح والتحميد</h3>
+      <p>سُبْحَانَ اللَّهِ وَبِحَمْدِهِ، سُبْحَانَ اللَّهِ الْعَظِيمِ.</p>
+    </div>
+
+    <div class="zikr">
+      <h3>الذكر الجامع</h3>
+      <p>لَا إِلٰهَ إِلَّا اللَّهُ، وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِير.</p>
+    </div>
+
+    <div class="zikr">
+      <h3>دعاء الرحمة</h3>
+      <p>اللّهُمَّ أَنْزِلْ عَلَى قَبْرِهِ الضِّيَاءَ وَالنُّورَ، وَافْسَحْ لَهُ فِي قَبْرِهِ، وَاجْعَلْهُ رَوْضَةً مِنْ رِيَاضِ الْجَنَّة.</p>
+    </div>
+
+    <div class="zikr">
+      <h3>دعاء الصبر</h3>
+      <p>رَبَّنَا أَفْرِغْ عَلَيْنَا صَبْرًا، وَتَوَفَّنَا مُسْلِمِينَ.</p>
+    </div>
+
+    <div class="zikr">
+      <h3>دعاء القبول</h3>
+      <p>اللّهُمَّ تَقَبَّلْ مِنَّا، وَاجْعَلْ هٰذَا الذِّكْرَ نُورًا فِي قُلُوبِنَا، وَرَحْمَةً لِمَنْ فِي قَبْرِهِ.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- MODAL -->
+<div class="modal" id="reader">
+  <div class="modal-box">
+    <span class="close" onclick="closeModal()">×</span>
+    <h3 id="modalTitle"></h3>
+    <p id="modalText"></p>
+  </div>
+</div>
+
+<script>
+document.querySelectorAll('.zikr, .card').forEach(el=>{
+  el.addEventListener('click',()=>{
+    document.getElementById("modalTitle").innerText =
+      el.querySelector("h3") ? el.querySelector("h3").innerText : "دعاء";
+
+    document.getElementById("modalText").innerText =
+      el.querySelector("p") ? el.querySelector("p").innerText : el.innerText;
+
+    document.getElementById("reader").classList.add("show");
+  });
+});
+
+function closeModal(){
+  document.getElementById("reader").classList.remove("show");
+}
+</script>
+
+</body>
+</html>
