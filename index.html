@@ -28,7 +28,6 @@ body{
   overflow-x:hidden;
 }
 
-/* HERO */
 header{
   padding:60px 10px 30px;
   animation:fadeIn 1.5s ease;
@@ -44,7 +43,6 @@ header h1{
   letter-spacing:0.5px;
 }
 
-/* IMAGES */
 .images{
   display:flex;
   justify-content:center;
@@ -70,8 +68,6 @@ header h1{
 .images img:nth-child(2){
   animation-delay:3s;
 }
-
-/* CARDS */
 section{
   width:95%;
   max-width:900px;
@@ -89,8 +85,6 @@ section{
   font-size:1rem;
   line-height:1.6;
 }
-
-/* ATHKAR */
 .athkar-cards{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
@@ -117,8 +111,6 @@ section{
   margin-bottom:8px;
   font-weight:700;
 }
-
-/* MODAL */
 .modal{
   position:fixed;
   inset:0;
@@ -160,15 +152,6 @@ section{
   cursor:pointer;
 }
 
-/* FOOTER */
-footer{
-  padding:30px 10px;
-  color:var(--muted);
-  font-size:14px;
-  text-align:center;
-}
-
-/* ANIMATIONS */
 @keyframes fadeIn{
   from{opacity:0;transform:translateY(15px)}
   to{opacity:1;transform:none}
@@ -181,8 +164,6 @@ footer{
   0%,100%{transform:translateY(0)}
   50%{transform:translateY(-12px)}
 }
-
-/* SMALL SCREENS */
 @media(max-width:480px){
   header h1{font-size:22px;}
   .sub{font-size:14px;}
